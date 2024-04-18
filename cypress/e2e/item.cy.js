@@ -15,4 +15,12 @@ describe("item page tests", () => {
         ItemPage.itemName.should("be.visible")
         ItemPage.itemPrice.should("be.visible")
     })
+
+    it("check to click on the button add to cart appear button remove and click to button remove appear button faa to cart", () => {
+       ItemPage.buttonAddToCart.click()
+       ItemPage.buttonRemove.should("be.visible")
+       ItemPage.buttonRemove.click()
+       ItemPage.buttonAddToCart.should("be.visible")
+    })
+    
 })
