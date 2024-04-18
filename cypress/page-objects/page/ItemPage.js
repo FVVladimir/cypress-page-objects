@@ -21,6 +21,13 @@ class ItemPage extends BasePage {
      
    }
 
+   get buttonAddToCart(){
+    return cy.get('[data-test="add-to-cart"]')
+   }
+   get buttonRemove(){
+    return cy.get('[data-test="remove"]')
+   }
+
    open(){
     super.open('')
     LoginPage.login(userData.userNames.correctUser, userData.passwords.correctPassword)
